@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 — 서울 유흥 예산 가이드</title>
+    <meta name="description" content="서울 유흥 예산 가이드 블로그를 소개합니다. 정보 비대칭이 심한 유흥 소비 시장에서 합리적이고 투명한 예산 기준을 제시하여 누구나 실패 없는 선택을 할 수 있도록 돕습니다.">
+    <meta name="keywords" content="유흥 예산 가이드, 블로그 소개, 예산 가이드 운영자, 투명한 예산, 합리적 소비">
+    <link rel="canonical" href="https://memo.deungchonnight.xyz/about.html">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="소개 — 서울 유흥 예산 가이드">
+    <meta property="og:description" content="정보 비대칭이 심한 유흥 소비 시장에서 합리적이고 투명한 예산 기준을 제시합니다.">
+    <meta property="og:url" content="https://memo.deungchonnight.xyz/about.html">
+
+    <style>
+        /* SYSTEM STYLE - BRUTALIST RAW CONCRETE */
+        :root {
+            --bg-base: #e6e6e6;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-muted: #555555;
+            --accent: #ff4500; /* Neon Orange-Red */
+            --accent-green: #00b050;
+            --border-heavy: 4px solid #1a1a1a;
+            --border-thin: 2px solid #1a1a1a;
+            --shadow-brutal: 8px 8px 0px #1a1a1a;
+            --shadow-brutal-small: 4px 4px 0px #1a1a1a;
+            --font-mono: 'Courier New', Courier, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* HEADER & NAV */
+        header {
+            background: var(--bg-card);
+            border-bottom: var(--border-heavy);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+        }
+
+        .logo {
+            font-family: var(--font-mono);
+            font-weight: 900;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: var(--border-thin);
+            padding: 0.3rem 0.8rem;
+            background: var(--accent);
+            color: #fff;
+            box-shadow: var(--shadow-brutal-small);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            border: var(--border-thin);
+            background: var(--bg-base);
+            box-shadow: var(--shadow-brutal-small);
+        }
+
+        /* HAMBURGER FOR MOBILE */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            border: var(--border-thin);
+            padding: 8px;
+            background: var(--bg-card);
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-primary);
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+        }
+
+        .hero-text-block {
+            background: var(--bg-card);
+            border: var(--border-heavy);
+            padding: 3.5rem 2.5rem;
+            box-shadow: var(--shadow-brutal);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-badge {
+            font-family: var(--font-mono);
+            display: inline-block;
+            background: var(--text-primary);
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            font-weight: 700;
+            width: fit-content;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            word-break: keep-all;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            word-break: keep-all;
+        }
+
+        .hero-visual {
+            background: var(--text-primary);
+            color: var(--bg-base);
+            border: var(--border-heavy);
+            padding: 3rem;
+            box-shadow: var(--shadow-brutal);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .visual-title {
+            font-family: var(--font-mono);
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            color: var(--accent);
+            word-wrap: break-word;
+        }
+
+        .visual-desc {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            border-top: 2px dashed var(--bg-base);
+            padding-top: 1.5rem;
+        }
+
+        /* INTRO STORY SECTION (ANECDOTES) */
+        .story-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            border-bottom: var(--border-heavy);
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .section-header .tag {
+            font-family: var(--font-mono);
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .story-card {
+            background: var(--bg-card);
+            border: var(--border-heavy);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-brutal);
+        }
+
+        .story-card.highlight {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .story-card h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-card p {
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+            word-break: keep-all;
+        }
+
+        .story-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* CORE PRINCIPLES (PROFESSIONALISM) */
+        .principles-section {
+            background: var(--text-primary);
+            color: #fff;
+            padding: 5rem 2rem;
+            border-top: var(--border-heavy);
+            border-bottom: var(--border-heavy);
+        }
+
+        .principles-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .principle-box {
+            border: 3px solid #fff;
+            padding: 2rem;
+            background: #222;
+            transition: transform 0.2s ease;
+        }
+
+        .principle-box:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 6px 6px 0px var(--accent);
+        }
+
+        .principle-num {
+            font-family: var(--font-mono);
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .principle-box h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .principle-box p {
+            font-size: 0.95rem;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        /* FAQ SECTION */
+        .faq-section {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: var(--border-heavy);
+            padding: 2rem;
+            box-shadow: var(--shadow-brutal-small);
+        }
+
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .faq-question::before {
+            content: "Q.";
+            font-family: var(--font-mono);
+            color: var(--accent);
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .faq-answer {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            padding-left: 2rem;
+            line-height: 1.6;
+            border-left: 3px solid var(--accent);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--text-primary);
+            color: #fff;
+            border-top: var(--border-heavy);
+            padding: 4rem 2rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            border-bottom: 1px solid #444;
+            padding-bottom: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand h4 {
+            font-family: var(--font-mono);
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            color: #aaa;
+            font-size: 0.95rem;
+            max-width: 400px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 3rem;
+            justify-content: flex-end;
+        }
+
+        .footer-links-col h5 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .footer-links-col ul {
+            list-style: none;
+        }
+
+        .footer-links-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links-col ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-links-col ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 992px) {
+            .hero-section {
+                grid-template-columns: 1fr;
+            }
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+            .principles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-card);
+                border-bottom: var(--border-heavy);
+                padding: 1.5rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .visual-title {
+                font-size: 3.5rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-links {
+                justify-content: flex-start;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER & NAV -->
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">BUDGET GUIDE</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-links" id="nav-menu">
+                <a href="/">홈</a>
+                <a href="/about.html" class="active">소개</a>
+                <a href="/guide.html">예산 가이드</a>
+                <a href="/tips.html">이용 팁</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-text-block">
+            <span class="hero-badge">ABOUT THIS BLOG</span>
+            <h1>불투명한 시장에<br>직관적인 이정표를.</h1>
+            <p>
+                정보의 격차가 유독 심한 영역이 있죠. 특히 밤 문화나 유흥 관련 소비는 가이드라인이 명확지 않아 처음 접하는 이들이 겪는 혼란이 크거든요. 이 블로그는 그런 답답함을 해소하고자 시작되었습니다.
+            </p>
+        </div>
+        <div class="hero-visual">
+            <div class="visual-title">RAW<br>TRUTH<br>ONLY.</div>
+            <div class="visual-desc">
+                특정 업체의 유도 광고나 과장된 마케팅 문구를 걷어내고, 오직 현실적이고 합리적인 소비 기준만을 제시합니다.
+            </div>
+        </div>
+    </section>
+
+    <!-- STORY SECTION (ANECDOTE) -->
+    <section class="story-section">
+        <div class="section-header">
+            <h2>운영 스토리</h2>
+            <span class="tag">// WHY WE STARTED</span>
+        </div>
+        <div class="story-grid">
+            <div class="story-card">
+                <h3>"예산 계획 없는 소비의 끝"</h3>
+                <p>
+                    저 역시 처음 서울에서 모임이나 회식을 주도할 때, 정확한 예산 기준을 알지 못해 곤혹스러웠던 경험이 많았답니다. 인터넷에 검색해 봐도 온통 광고성 글이거나, 막상 방문해 보면 이런저런 명목으로 추가금이 붙어 예산을 훌쩍 넘기기 일쑤였죠.
+                </p>
+                <p>
+                    '미리 1인당 정확히 얼마가 드는지 정직하게 알려주는 곳은 없을까?'라는 지극히 단순한 의문이 이 가이드를 제작하게 된 계기가 되었습니다.
+                </p>
+            </div>
+            <div class="story-card highlight">
+                <h3>"광고판이 아닌, 정보판으로"</h3>
+                <p>
+                    이 블로그는 특정 업소의 예약을 대행하거나 수수료를 받는 에이전시가 아니에요. 그렇기에 눈치 보지 않고 객관적인 가격대와 선택지를 나열할 수 있답니다.
+                </p>
+                <p>
+                    소비자가 주도권을 쥐고 예산에 맞춰 합리적인 선택을 할 수 있는 환경을 만드는 것, 그것이 이 투명한 가이드라인의 궁극적인 존재 이유입니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PRINCIPLES -->
+    <section class="principles-section">
+        <div class="principles-container">
+            <div class="section-header" style="border-bottom-color: #fff;">
+                <h2 style="color: #fff;">세 가지 약속</h2>
+                <span class="tag" style="color: var(--accent);">// CORE VALUES</span>
+            </div>
+            <div class="principles-grid">
+                <div class="principle-box">
+                    <span class="principle-num">01</span>
+                    <h3>철저한 객관성 유지</h3>
+                    <p>특정 업소에 편향된 추천이나 허위 정보를 철저히 배제합니다. 오직 시장의 평균적인 가격 지표만을 기준으로 삼아 신뢰도를 높입니다.</p>
+                </div>
+                <div class="principle-box">
+                    <span class="principle-num">02</span>
+                    <h3>실제 체감 예산 반영</h3>
+                    <p>기본 주류값 외에도 룸비, 웨이터 팁, 세금 및 봉사료 등 현장에서 발생할 수 있는 모든 실질적 비용 요소를 포함하여 예산을 산출합니다.</p>
+                </div>
+                <div class="principle-box">
+                    <span class="principle-num">03</span>
+                    <h3>초보자 시점의 해설</h3>
+                    <p>어려운 업계 용어나 은어 대신, 처음 문화를 접하는 일반 소비자가 직관적으로 이해할 수 있는 쉬운 용어로 정보를 전달합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="section-header">
+            <h2>자주 묻는 질문</h2>
+            <span class="tag">// FAQ</span>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">이 예산 가이드는 얼마나 정확한가요?</div>
+                <div class="faq-answer">
+                    서울 내 주요 상권(강남, 마포, 영등포 등)에서 형성되어 있는 평균 시세를 기반으로 작성되었습니다. 주말 여부나 업소의 세부 정책에 따라 미세한 차이는 있을 수 있지만, 터무니없는 바가지를 피하기 위한 기준점으로 삼기에는 충분히 정확합니다.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">특정 업소를 추천해주거나 예약도 대행해주나요?</div>
+                <div class="faq-answer">
+                    아니요, 본 블로그는 정보 제공 목적으로만 운영되며 특정 업소의 예약 대행이나 중개는 일절 진행하지 않습니다. 순수한 가이드 정보만을 제공하여 투명성을 유지합니다.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h4>SEOUL BUDGET GUIDE</h4>
+                <p>정보 비대칭이 심한 소비 영역에서 투명하고 신뢰할 수 있는 예산 지표를 제공하여 합리적인 선택을 돕습니다.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-col">
+                    <h5>내비게이션</h5>
+                    <ul>
+                        <li><a href="/">홈</a></li>
+                        <li><a href="/about.html">소개</a></li>
+                        <li><a href="/guide.html">예산 가이드</a></li>
+                        <li><a href="/tips.html">이용 팁</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Seoul Budget Guide. All rights reserved.</p>
+            <p>Contact: info@memo.deungchonnight.xyz</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
