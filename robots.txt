@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://memo.deungchonnight.xyz/sitemap.xml
+Sitemap: https://memo.deungchonnight.xyz/sitemap-pages.xml
